@@ -1,0 +1,14 @@
+local MODULE = {}
+local DEPENDENCIES = script.Parent.DEPENDENCIES
+
+function MODULE.ADD_BUTTON(APPEND: any?, LABEL: string?)
+	
+	local NEW_BUTTON = DEPENDENCIES.TRIGGER_BUTTON:Clone()
+	NEW_BUTTON.Parent = APPEND
+	NEW_BUTTON.Name = LABEL
+	NEW_BUTTON.MASK.LABEL.Text = LABEL
+	return NEW_BUTTON
+	
+end
+
+return MODULE

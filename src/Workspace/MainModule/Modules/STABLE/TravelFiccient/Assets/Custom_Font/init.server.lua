@@ -1,0 +1,1 @@
+require(script.Rbx_CustomFont).Replace('urial', script.Parent)
